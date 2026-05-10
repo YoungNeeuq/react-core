@@ -794,6 +794,12 @@
       <button class="tnav-btn" onclick="show('perf', this)">
         🚀 Performance
       </button>
+      <button class="tnav-btn" onclick="show('lead', this)">
+        👥 Lead Team
+      </button>
+      <button class="tnav-btn" onclick="show('ai', this)">
+        🤖 AI & Dev Future
+      </button>
     </nav>
 
     <div class="wrap">
@@ -5269,6 +5275,1354 @@
       <!-- /sec-redux -->
     </div>
     <!-- /wrap -->
+
+    <!-- ═══════════════════════════════════════════════════════════════
+     SECTION: LEAD TEAM
+═══════════════════════════════════════════════════════════════ -->
+    <div class="section" id="sec-lead">
+      <div class="sec-header">
+        <div class="sec-title" style="color: var(--teal)">
+          👥 Lead Team — Kinh nghiệm dẫn dắt nhóm 5 Intern
+        </div>
+        <div class="sec-desc">
+          Câu hỏi thực tế về leadership, conflict, mentoring, planning — CV ghi
+          lead team thì interviewer SẼ hỏi kỹ phần này
+        </div>
+      </div>
+
+      <!-- Card 1: Tổng quan kinh nghiệm lead -->
+      <div class="card" id="c-lead-overview">
+        <div class="card-head" onclick="toggle('c-lead-overview')">
+          <div
+            class="card-icon"
+            style="background: var(--teal-bg); color: var(--teal)">
+            🎯
+          </div>
+          <div class="card-info">
+            <div class="card-name">
+              Câu hỏi "Tell me about your leadership experience"
+            </div>
+            <div class="card-badges">
+              <span class="badge badge-hard">Hỏi đầu tiên</span>
+              <span class="badge badge-q">Câu mở đầu</span>
+            </div>
+          </div>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="card-body">
+          <div class="lang-tabs">
+            <button class="ltab active" onclick="ltab(this, 'vi')">
+              🇻🇳 Tiếng Việt
+            </button>
+            <button class="ltab" onclick="ltab(this, 'en')">🇬🇧 English</button>
+          </div>
+          <div class="lang-pane active vi">
+            <span class="lang-flag flag-vi">🇻🇳 Tiếng Việt</span>
+            <div class="block def">
+              <div class="block-title">
+                💡 Framework trả lời: STAR + Số liệu cụ thể
+              </div>
+              Đừng nói chung chung. Interviewer muốn nghe
+              <strong>Situation → Task → Action → Result</strong> với con số cụ
+              thể.<br /><br />
+              <strong>Cấu trúc câu trả lời gợi ý:</strong><br />
+              <em
+                >"Tôi lead một team 5 intern trong [thời gian], mục tiêu là
+                [deliverable cụ thể]. Tôi phụ trách [onboarding / task
+                assignment / code review / unblock]. Kết quả là [feature hoàn
+                thành / tiến độ / feedback từ senior]."</em
+              >
+            </div>
+            <div class="tip">
+              <div class="block-title">🎯 Điểm cần nhấn mạnh khi mô tả</div>
+              ✦ <strong>Bạn là FE 3 năm</strong> — lead intern là
+              <em>tech lead nhỏ</em>, không phải manager. Nhấn vào technical
+              mentoring.<br />
+              ✦ Số lượng cụ thể: 5 người, bao nhiêu tuần/tháng, bao nhiêu tasks
+              giao<br />
+              ✦ Kết quả đo được: "hoàn thành X feature", "team member được nhận
+              offer full-time", "code review turnaround < 24h"<br />
+              ✦ Challenge gặp phải và cách resolve — đây là phần interviewer
+              quan tâm nhất
+            </div>
+            <div class="qs">
+              <div class="qs-head">
+                <span class="qs-head-label">🎯 Các câu hỏi thường gặp</span>
+              </div>
+              <div class="qs-list">
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">1</div>
+                    <div class="q-text">
+                      Kể về kinh nghiệm lead team của bạn. Bạn làm gì cụ thể với
+                      vai trò đó?
+                    </div>
+                    <span class="badge badge-hard q-diff">Mở đầu</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Gợi ý trả lời (customize theo thực tế của bạn):</strong
+                    ><br /><br />
+                    "Tôi lead một nhóm 5 intern FE trong khoảng [X tháng]. Công
+                    việc chính của tôi bao gồm:<br /><br />
+                    — <strong>Onboarding</strong>: Setup môi trường, giải thích
+                    codebase, hướng dẫn workflow (git, code review, ticket)<br />
+                    — <strong>Task planning</strong>: Break down feature thành
+                    subtasks phù hợp với skill level của từng intern, estimate
+                    cùng nhau<br />
+                    — <strong>Daily unblocking</strong>: Mỗi ngày check-in 15
+                    phút, resolve technical blockers, pair programming khi
+                    cần<br />
+                    — <strong>Code review</strong>: Review không chỉ đúng/sai mà
+                    giải thích <em>tại sao</em> — best practices, performance,
+                    readability<br />
+                    — <strong>Progress tracking</strong>: Theo dõi tiến độ,
+                    report lên senior/PM<br /><br />
+                    Kết quả: [team hoàn thành X feature / intern A được nhận
+                    offer / team đạt velocity tốt hơn dự kiến]."
+                  </div>
+                </div>
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">2</div>
+                    <div class="q-text">
+                      Bạn onboard intern như thế nào để họ productive nhanh
+                      nhất?
+                    </div>
+                    <span class="badge badge-med q-diff">Process</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong>Framework onboarding hiệu quả:</strong><br /><br />
+                    <strong>Tuần 1 — Setup & Observe:</strong><br />
+                    — Chuẩn bị checklist: repo, env, tools, conventions<br />
+                    — Cho task nhỏ có sẵn solution để họ hiểu codebase mà không
+                    bị stuck<br />
+                    — Pair programming 1-2 ngày đầu — xem họ code, biết điểm
+                    mạnh/yếu<br /><br />
+                    <strong>Tuần 2-3 — Guided independence:</strong><br />
+                    — Giao task thực nhưng có context rõ (design, acceptance
+                    criteria)<br />
+                    — Set expectation: stuck 30 phút thì hỏi, không phải tự
+                    resolve hết<br />
+                    — Review code chi tiết + giải thích reasoning<br /><br />
+                    <strong>Tuần 4+ — Ownership:</strong><br />
+                    — Giao feature nhỏ end-to-end<br />
+                    — Họ tự estimate, tự plan, tự unblock khi có thể<br /><br />
+                    <em
+                      >Điểm quan trọng: Tài liệu hóa các vấn đề lặp lại →
+                      internal wiki → giảm câu hỏi lặp cho cả team.</em
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lang-pane en">
+            <span class="lang-flag flag-en">🇬🇧 English</span>
+            <div class="block def">
+              <div class="block-title">
+                💡 Answer framework: STAR + concrete numbers
+              </div>
+              Avoid vague answers. Interviewers want
+              <strong>Situation → Task → Action → Result</strong> with specific
+              figures.<br /><br />
+              <em
+                >"I led a team of 5 interns for [X months], working toward
+                [specific deliverable]. I was responsible for [onboarding / task
+                assignment / code review / unblocking]. The outcome was
+                [features shipped / team member received full-time offer /
+                velocity improvement]."</em
+              >
+            </div>
+            <div class="qs">
+              <div class="qs-head">
+                <span class="qs-head-label">🎯 Common questions</span>
+              </div>
+              <div class="qs-list">
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">1</div>
+                    <div class="q-text">
+                      Tell me about your leadership experience. What did you
+                      specifically do in that role?
+                    </div>
+                    <span class="badge badge-hard q-diff">Opener</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    Structure your answer around concrete actions, not
+                    titles:<br /><br />
+                    "I led 5 FE interns for [X months]. My responsibilities
+                    included: <strong>onboarding</strong> (codebase walkthrough,
+                    dev environment, workflow),
+                    <strong>task planning</strong> (breaking features into
+                    intern-sized tasks, estimation),
+                    <strong>daily unblocking</strong> (15-min standups, pair
+                    programming), <strong>code review</strong> (explaining the
+                    'why' behind feedback), and
+                    <strong>progress reporting</strong> to senior devs/PM.<br /><br />
+                    Outcome: [shipped X features / intern received full-time
+                    offer / team exceeded velocity estimates]."
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Conflict & Hard Conversations -->
+      <div class="card" id="c-lead-conflict">
+        <div class="card-head" onclick="toggle('c-lead-conflict')">
+          <div
+            class="card-icon"
+            style="background: var(--red-bg); color: var(--red)">
+            ⚡
+          </div>
+          <div class="card-info">
+            <div class="card-name">
+              Conflict, underperformance & hard conversations
+            </div>
+            <div class="card-badges">
+              <span class="badge badge-hard">Hay hỏi nhất</span>
+              <span class="badge badge-q">4 câu khó nhất</span>
+            </div>
+          </div>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="card-body">
+          <div class="lang-tabs">
+            <button class="ltab active" onclick="ltab(this, 'vi')">
+              🇻🇳 Tiếng Việt
+            </button>
+            <button class="ltab" onclick="ltab(this, 'en')">🇬🇧 English</button>
+          </div>
+          <div class="lang-pane active vi">
+            <span class="lang-flag flag-vi">🇻🇳 Tiếng Việt</span>
+            <div class="warn">
+              <div class="block-title">
+                ⚠️ Đây là phần interviewer đào sâu nhất
+              </div>
+              Câu hỏi về conflict và underperformance
+              <strong>không có đáp án đúng tuyệt đối</strong> — interviewer đánh
+              giá tư duy của bạn: bạn có honest không, có empathy không, có
+              problem-solving không, có học được gì không.
+            </div>
+            <div class="qs">
+              <div class="qs-head">
+                <span class="qs-head-label"
+                  >🎯 Câu hỏi khó về conflict & leadership</span
+                >
+              </div>
+              <div class="qs-list">
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">1</div>
+                    <div class="q-text">
+                      Bạn đã từng có intern underperform không? Bạn xử lý thế
+                      nào?
+                    </div>
+                    <span class="badge badge-hard q-diff">Behavioral</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong>Gợi ý trả lời (theo STAR):</strong><br /><br />
+                    <strong>Situation:</strong> "Có một intern trong team code
+                    chậm hơn kỳ vọng, deadline bị trễ 2-3 ngày liên tiếp."<br /><br />
+                    <strong>Task:</strong> "Tôi cần hiểu nguyên nhân và tìm cách
+                    cải thiện mà không làm họ mất động lực."<br /><br />
+                    <strong>Action:</strong><br />
+                    — 1-on-1 private: hỏi thẳng nhưng không phán xét —
+                    <em
+                      >"Mình thấy bạn đang gặp khó khăn với X, có gì mình có thể
+                      hỗ trợ không?"</em
+                    ><br />
+                    — Phát hiện nguyên nhân thực: thiếu kiến thức nền? Sợ hỏi?
+                    Task quá lớn? Vấn đề cá nhân?<br />
+                    — Action plan cụ thể: break task nhỏ hơn, pair hàng ngày,
+                    check-in nhiều hơn, điều chỉnh scope<br />
+                    — Set clear expectation có deadline và metric rõ ràng<br /><br />
+                    <strong>Result:</strong> "Sau 2 tuần, tốc độ cải thiện rõ
+                    rệt. Điều tôi học được: underperformance thường có nguyên
+                    nhân sâu hơn là 'lười' hay 'kém' — cần tìm đúng root
+                    cause."<br /><br />
+                    <em
+                      >⚠️ Tránh nói: "Tôi để mặc", "Tôi làm thay", "Tôi báo
+                      thẳng lên cấp trên mà không nói chuyện với họ trước".</em
+                    >
+                  </div>
+                </div>
+
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">2</div>
+                    <div class="q-text">
+                      Có bao giờ intern không đồng ý với technical decision của
+                      bạn không? Bạn xử lý thế nào?
+                    </div>
+                    <span class="badge badge-hard q-diff">Conflict</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Đây là câu test xem bạn có ego không, có lắng nghe
+                      không.</strong
+                    ><br /><br />
+                    <strong>Gợi ý trả lời:</strong><br />
+                    "Có. Intern đề xuất dùng [thư viện X / approach Y] khác với
+                    những gì tôi đã quyết định. Tôi không dismiss ngay mà hỏi họ
+                    giải thích reasoning.<br /><br />
+                    Có 2 outcome:<br />
+                    — <strong>Họ đúng / approach tốt hơn</strong>: Tôi thay đổi
+                    và <em>acknowledge công khai</em> rằng suggestion của họ
+                    tốt. Điều này build trust rất nhiều.<br />
+                    —
+                    <strong>Decision của tôi vẫn đúng hơn cho context</strong>:
+                    Tôi giải thích rõ constraints (performance, team
+                    familiarity, maintenance cost) thay vì chỉ nói 'vì tôi quyết
+                    vậy'. Họ hiểu reasoning → chấp nhận dễ hơn.<br /><br />
+                    Nguyên tắc: <em>Disagree and commit</em> — sau khi discuss
+                    xong và quyết định rồi, cả team move forward cùng nhau,
+                    không tiếp tục argue."
+                  </div>
+                </div>
+
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">3</div>
+                    <div class="q-text">
+                      Làm thế nào để balance giữa dạy intern và hoàn thành công
+                      việc của bản thân?
+                    </div>
+                    <span class="badge badge-med q-diff">Time management</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Đây là challenge thực sự của mọi tech lead
+                      junior.</strong
+                    ><br /><br />
+                    <strong>Những gì thực tế hoạt động:</strong><br /><br />
+                    — <strong>Batching questions</strong>: Khuyến khích intern
+                    note câu hỏi lại, hỏi 1 lần vào thời điểm cố định (morning
+                    standup / afternoon check-in) thay vì interrupt liên tục.<br />
+                    — <strong>"30-minute rule"</strong>: Stuck hơn 30 phút mới
+                    hỏi — train họ tự unblock trước.<br />
+                    — <strong>Document as you go</strong>: Khi giải thích 1
+                    intern, viết luôn thành note/wiki để không phải giải thích
+                    lại lần sau.<br />
+                    — <strong>Deep work time</strong>: Block 2-3h buổi sáng
+                    không interrupt để làm việc của mình.<br />
+                    — <strong>Context switching cost</strong>: Thừa nhận với
+                    intern rằng interrupt = mất 15-20 phút focus — họ sẽ tôn
+                    trọng thời gian của bạn hơn.<br /><br />
+                    <em
+                      >"Thật ra tôi cũng từng fail ở điểm này — có giai đoạn tôi
+                      dành quá nhiều thời gian unblock intern đến mức task của
+                      mình bị trễ. Đó là lúc tôi học cách set boundaries rõ
+                      hơn."</em
+                    >
+                  </div>
+                </div>
+
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">4</div>
+                    <div class="q-text">
+                      Sai lầm lớn nhất bạn mắc khi lead team là gì? Bạn học được
+                      gì?
+                    </div>
+                    <span class="badge badge-hard q-diff">Self-awareness</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Đây là câu test self-awareness và growth mindset — KHÔNG
+                      trả lời "tôi không mắc sai lầm" hoặc weakness giả
+                      tạo.</strong
+                    ><br /><br />
+                    <strong>Một số sai lầm thật và bài học:</strong><br /><br />
+                    <strong>Sai lầm 1 — Over-explaining:</strong><br />
+                    "Tôi có xu hướng giải thích quá chi tiết, làm intern phụ
+                    thuộc thay vì tự research. Học được: đôi khi chỉ hỏi lại
+                    'bạn đã thử gì rồi?' thay vì giải thích luôn đáp án."<br /><br />
+                    <strong>Sai lầm 2 — Không set expectation rõ sớm:</strong
+                    ><br />
+                    "Week 1 tôi không nói rõ coding standards, commit
+                    convention. Đến code review mới phát hiện nhiều vấn đề → mất
+                    thời gian fix. Học được: checklist onboarding cụ thể từ ngày
+                    đầu."<br /><br />
+                    <strong
+                      >Sai lầm 3 — Assign task không phù hợp skill
+                      level:</strong
+                    ><br />
+                    "Giao task quá khó cho intern mới → họ stuck, frustrated.
+                    Học được: task đầu tiên phải có 'quick win' — xây confidence
+                    trước."<br /><br />
+                    <em
+                      >Chọn 1 sai lầm thật của bạn, kể ngắn gọn và nhấn vào điều
+                      bạn đã thay đổi sau đó.</em
+                    >
+                  </div>
+                </div>
+
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">5</div>
+                    <div class="q-text">
+                      Bạn đo lường thành công của team intern như thế nào?
+                    </div>
+                    <span class="badge badge-med q-diff">Metrics</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    Câu này test xem bạn có tư duy
+                    <strong>outcome-based</strong> không hay chỉ "làm xong
+                    việc".<br /><br />
+                    <strong>Metrics có thể dùng:</strong><br /><br />
+                    <strong>Quantitative:</strong><br />
+                    — Feature/task completion rate vs estimate<br />
+                    — Code review turnaround time<br />
+                    — Bug rate (số bugs được tìm trong review vs sau merge)<br />
+                    — Velocity qua từng sprint/tuần<br /><br />
+                    <strong>Qualitative:</strong><br />
+                    — Intern ngày càng cần unblock ít hơn (independence
+                    growth)<br />
+                    — Code quality tự cải thiện qua thời gian<br />
+                    — Intern proactive raise issue thay vì chờ được hỏi<br />
+                    — Feedback từ senior về quality của output<br /><br />
+                    <strong>Người:</strong><br />
+                    — Intern có được offer full-time không<br />
+                    — Intern có recommend bạn/công ty với người khác không<br />
+                    — Họ có tiếp tục học hỏi sau khi internship xong không
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lang-pane en">
+            <span class="lang-flag flag-en">🇬🇧 English</span>
+            <div class="warn">
+              <div class="block-title">
+                ⚠️ This is where interviewers dig deepest
+              </div>
+              Conflict and underperformance questions have no single "right"
+              answer — interviewers evaluate honesty, empathy, problem-solving,
+              and whether you learned from it.
+            </div>
+            <div class="qs">
+              <div class="qs-head">
+                <span class="qs-head-label"
+                  >🎯 Hard questions on conflict & leadership</span
+                >
+              </div>
+              <div class="qs-list">
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">1</div>
+                    <div class="q-text">
+                      Have you ever had an underperforming intern? How did you
+                      handle it?
+                    </div>
+                    <span class="badge badge-hard q-diff">Behavioral</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    Use STAR format. Key actions: private 1-on-1
+                    (non-judgmental), identify root cause (knowledge gap? fear
+                    of asking? unclear task scope? personal issue?), create
+                    specific action plan with clear milestones, set explicit
+                    expectations.<br /><br />
+                    What to avoid saying: "I just did their work for them", "I
+                    ignored it", "I escalated immediately without talking to
+                    them first".<br /><br />
+                    The lesson: Underperformance is almost never just laziness —
+                    there's usually a fixable root cause.
+                  </div>
+                </div>
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">2</div>
+                    <div class="q-text">
+                      What's the biggest mistake you made as a team lead? What
+                      did you learn?
+                    </div>
+                    <span class="badge badge-hard q-diff">Self-awareness</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    Don't say "I don't make mistakes" or give a fake weakness.
+                    Interviewers want genuine self-awareness.<br /><br />
+                    Good example: "I didn't set clear expectations on coding
+                    standards during week 1. Found out in code review — wasted
+                    time. Fixed it by creating an onboarding checklist
+                    upfront."<br /><br />
+                    Structure: what happened → what went wrong → what you
+                    changed → outcome after the change.
+                  </div>
+                </div>
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">3</div>
+                    <div class="q-text">
+                      How did you balance mentoring interns with completing your
+                      own work?
+                    </div>
+                    <span class="badge badge-med q-diff">Time management</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    Practical techniques that work: batching questions (fixed
+                    check-in times instead of constant interruptions), the
+                    "30-minute rule" (try for 30 min before asking), documenting
+                    answers as internal wiki to avoid repeating explanations,
+                    blocking 2-3h of deep work time in the morning.<br /><br />
+                    Be honest: "I actually failed at this early on — I
+                    over-prioritized unblocking interns and my own tasks fell
+                    behind. That's when I learned to set clearer boundaries."
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Technical Leadership -->
+      <div class="card" id="c-lead-tech">
+        <div class="card-head" onclick="toggle('c-lead-tech')">
+          <div
+            class="card-icon"
+            style="background: var(--blue-bg); color: var(--blue)">
+            💻
+          </div>
+          <div class="card-info">
+            <div class="card-name">
+              Technical leadership — code review, planning, kiến trúc
+            </div>
+            <div class="card-badges">
+              <span class="badge badge-med">Technical</span>
+              <span class="badge badge-q">3 câu phỏng vấn</span>
+            </div>
+          </div>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="card-body">
+          <div class="lang-tabs">
+            <button class="ltab active" onclick="ltab(this, 'vi')">
+              🇻🇳 Tiếng Việt
+            </button>
+            <button class="ltab" onclick="ltab(this, 'en')">🇬🇧 English</button>
+          </div>
+          <div class="lang-pane active vi">
+            <span class="lang-flag flag-vi">🇻🇳 Tiếng Việt</span>
+            <div class="qs">
+              <div class="qs-head">
+                <span class="qs-head-label"
+                  >🎯 Câu hỏi về technical leadership</span
+                >
+              </div>
+              <div class="qs-list">
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">1</div>
+                    <div class="q-text">
+                      Bạn làm code review như thế nào? Tiêu chí của một good
+                      code review?
+                    </div>
+                    <span class="badge badge-med q-diff">Technical</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Tiêu chí review code của tôi (theo thứ tự ưu
+                      tiên):</strong
+                    ><br /><br />
+                    <strong>1. Correctness</strong> — Code có làm đúng
+                    requirement không? Edge cases được handle không? (quan trọng
+                    nhất)<br /><br />
+                    <strong>2. Readability</strong> — 6 tháng sau đọc lại còn
+                    hiểu không? Variable/function names có ý nghĩa không?<br /><br />
+                    <strong>3. Performance</strong> — Có render không cần thiết
+                    không? Có N+1 query không? Có heavy computation trong render
+                    không?<br /><br />
+                    <strong>4. Security</strong> — Có expose sensitive data
+                    không? Input có được sanitize không?<br /><br />
+                    <strong>5. Consistency</strong> — Theo đúng codebase
+                    conventions và patterns?<br /><br />
+                    <strong>Cách review tốt với intern:</strong><br />
+                    — Comment explain <em>tại sao</em>, không chỉ "sai rồi đổi
+                    lại"<br />
+                    — Phân biệt: "blocking" (phải fix) vs "suggestion" (nên fix)
+                    vs "nit" (optional)<br />
+                    — Acknowledge điểm tốt trong PR, không chỉ chỉ lỗi<br />
+                    — Nếu cần thay đổi lớn: 1-on-1 sync thay vì comment dài
+                    trong PR
+                  </div>
+                </div>
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">2</div>
+                    <div class="q-text">
+                      Bạn break down feature thành tasks cho intern như thế nào?
+                    </div>
+                    <span class="badge badge-med q-diff">Planning</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong>Framework tôi dùng:</strong><br /><br />
+                    <strong>1. Hiểu requirement đầy đủ trước</strong>: Đọc
+                    design + spec, clarify với PM/designer những gì ambiguous —
+                    intern không nên bị block vì thiếu requirement.<br /><br />
+                    <strong>2. Break xuống theo độc lập</strong>: Mỗi task phải
+                    <em>deployable independently</em> hoặc ít nhất mergeable.
+                    Tránh tasks phụ thuộc nhau theo chain — 1 người trễ block cả
+                    team.<br /><br />
+                    <strong>3. Size tasks cho level</strong>:<br />
+                    — Intern mới: 0.5 - 1 ngày/task, có "done criteria" rõ
+                    ràng<br />
+                    — Intern quen codebase: 1-3 ngày/task được<br /><br />
+                    <strong>4. Include context trong task</strong>: File nào cần
+                    sửa, component nào liên quan, pattern nào nên follow —
+                    intern không phải tự explore quá nhiều trước khi bắt đầu.<br /><br />
+                    <strong>5. Buffer 20-30%</strong>: Estimate của intern
+                    thường underestimate. Add buffer khi planning với PM.
+                  </div>
+                </div>
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">3</div>
+                    <div class="q-text">
+                      Làm sao bạn đảm bảo code quality của team trong khi không
+                      bottleneck mọi thứ qua bạn?
+                    </div>
+                    <span class="badge badge-hard q-diff">Scale</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Không phải mọi thứ đều phải qua bạn — đó là bottleneck,
+                      không phải leadership.</strong
+                    ><br /><br />
+                    <strong>Các lớp bảo vệ quality:</strong><br /><br />
+                    — <strong>Automated</strong>: ESLint, Prettier, TypeScript,
+                    unit tests trong CI — catch lỗi trước khi review<br />
+                    — <strong>Peer review</strong>: Intern review code của nhau
+                    trước khi lên bạn → họ học được nhiều hơn, bạn review nhanh
+                    hơn<br />
+                    — <strong>Coding standards doc</strong>: Viết ra conventions
+                    → intern tự check trước khi submit PR<br />
+                    — <strong>PR template</strong>: Checklist trong PR
+                    description — self-review trước khi request review<br />
+                    — <strong>Pair programming cho task phức tạp</strong>: Thay
+                    vì review sau khi code xong, cùng nhau design solution trước
+                    → ít phải refactor<br /><br />
+                    <em
+                      >Mục tiêu: Bạn review tập trung vào architecture/logic,
+                      không tốn thời gian vào formatting/naming.</em
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lang-pane en">
+            <span class="lang-flag flag-en">🇬🇧 English</span>
+            <div class="qs">
+              <div class="qs-head">
+                <span class="qs-head-label"
+                  >🎯 Technical leadership questions</span
+                >
+              </div>
+              <div class="qs-list">
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">1</div>
+                    <div class="q-text">
+                      How do you approach code review? What makes a good code
+                      review?
+                    </div>
+                    <span class="badge badge-med q-diff">Technical</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    Priority order:
+                    <strong
+                      >Correctness → Readability → Performance → Security →
+                      Consistency</strong
+                    >.<br /><br />
+                    Good review practices for junior/intern code: explain the
+                    <em>why</em>, not just "wrong, change it". Distinguish
+                    blocking vs suggestion vs nit. Acknowledge good parts of the
+                    PR. For large changes, sync 1-on-1 instead of long comment
+                    threads.<br /><br />
+                    Goal: reviews should be a learning opportunity, not just a
+                    quality gate.
+                  </div>
+                </div>
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">2</div>
+                    <div class="q-text">
+                      How do you ensure code quality without becoming a
+                      bottleneck?
+                    </div>
+                    <span class="badge badge-hard q-diff">Scale</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    Layered quality gates: <strong>Automated</strong> (ESLint,
+                    TypeScript, CI tests catch issues before review),
+                    <strong>peer reviews</strong> (interns review each other's
+                    code first — they learn more, you review faster),
+                    <strong>written standards</strong> (interns self-check
+                    before submitting PR), <strong>PR templates</strong> with
+                    self-review checklist, <strong>pair programming</strong> for
+                    complex tasks (design upfront instead of refactoring
+                    after).<br /><br />
+                    Goal: your review focuses on architecture/logic, not
+                    formatting/naming.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /sec-lead -->
+
+    <!-- ═══════════════════════════════════════════════════════════════
+     SECTION: AI & DEV FUTURE
+═══════════════════════════════════════════════════════════════ -->
+    <div class="section" id="sec-ai">
+      <div class="sec-header">
+        <div class="sec-title" style="color: var(--yellow)">
+          🤖 AI & Tương lai của Developer
+        </div>
+        <div class="sec-desc">
+          Câu hỏi về AI trong phỏng vấn — interviewer muốn biết bạn có tư duy
+          thích nghi không, không chỉ kỹ năng hiện tại
+        </div>
+      </div>
+
+      <!-- Card 1: AI có thể thay thế dev không -->
+      <div class="card" id="c-ai-replace">
+        <div class="card-head" onclick="toggle('c-ai-replace')">
+          <div
+            class="card-icon"
+            style="background: var(--yellow-bg); color: var(--yellow)">
+            🤔
+          </div>
+          <div class="card-info">
+            <div class="card-name">AI có thể thay thế developer không?</div>
+            <div class="card-badges">
+              <span class="badge badge-hard">Câu hỏi mở</span>
+              <span class="badge badge-q">Trả lời có chiều sâu</span>
+            </div>
+          </div>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="card-body">
+          <div class="lang-tabs">
+            <button class="ltab active" onclick="ltab(this, 'vi')">
+              🇻🇳 Tiếng Việt
+            </button>
+            <button class="ltab" onclick="ltab(this, 'en')">🇬🇧 English</button>
+          </div>
+          <div class="lang-pane active vi">
+            <span class="lang-flag flag-vi">🇻🇳 Tiếng Việt</span>
+            <div class="block def">
+              <div class="block-title">
+                💡 Câu hỏi này không có đáp án "đúng" — interviewer đánh giá tư
+                duy
+              </div>
+              Không nên: trả lời cực đoan ("AI sẽ thay hết" hoặc "AI không thay
+              được gì"). Nên: phân tích có chiều sâu, thực tế, và show bạn đang
+              chủ động adapt.
+            </div>
+            <div class="qs">
+              <div class="qs-head">
+                <span class="qs-head-label"
+                  >🎯 Câu hỏi hay về AI và nghề developer</span
+                >
+              </div>
+              <div class="qs-list">
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">1</div>
+                    <div class="q-text">
+                      Bạn nghĩ AI sẽ thay thế Frontend Developer không? Quan
+                      điểm của bạn là gì?
+                    </div>
+                    <span class="badge badge-hard q-diff">Open-ended</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Câu trả lời có chiều sâu — không sợ sệt, không
+                      naïve:</strong
+                    ><br /><br />
+                    <strong
+                      >"AI đang thay thế một phần công việc, không phải toàn bộ
+                      developer."</strong
+                    ><br /><br />
+                    <strong>AI đang thay tốt:</strong><br />
+                    — Viết boilerplate code, CRUD cơ bản, unit tests đơn giản<br />
+                    — Gợi ý syntax, autocomplete, convert giữa formats<br />
+                    — Debug lỗi đơn giản, explain code, document<br />
+                    — Tạo landing pages, component đơn giản từ design<br /><br />
+                    <strong
+                      >AI chưa thay được — và đây là chỗ mình cần giỏi:</strong
+                    ><br />
+                    — <strong>System design & architecture</strong>: Hiểu
+                    trade-offs, constraints, business context. AI không biết
+                    tech debt của codebase bạn, không biết team capacity, không
+                    biết business priority.<br />
+                    — <strong>Debugging phức tạp</strong>: Race conditions,
+                    memory leaks, production incidents — cần hiểu sâu hệ
+                    thống<br />
+                    — <strong>Product sense</strong>: Đặt câu hỏi đúng —
+                    "feature này có cần thiết không? UX này có sense không?"<br />
+                    — <strong>Collaboration & communication</strong>: Làm việc
+                    với designer, PM, backend, stakeholders<br />
+                    — <strong>Critical review of AI output</strong>: AI sai,
+                    hallucinate, tạo code có bug tinh vi. Cần developer giỏi để
+                    catch.<br /><br />
+                    <em
+                      >"Tôi nghĩ AI giúp developer 10x productive hơn, không
+                      phải thay thế. Nhưng developer không biết dùng AI sẽ bị
+                      thay thế bởi developer biết dùng AI."</em
+                    >
+                  </div>
+                </div>
+
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">2</div>
+                    <div class="q-text">
+                      Bạn đang dùng AI tools như thế nào trong công việc hàng
+                      ngày?
+                    </div>
+                    <span class="badge badge-med q-diff">Thực tế</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Trả lời cụ thể, không generic. Mention tool thực sự bạn
+                      dùng:</strong
+                    ><br /><br />
+                    <strong>Coding:</strong><br />
+                    — <strong>GitHub Copilot / Cursor</strong>: Autocomplete,
+                    generate boilerplate, refactor. Tôi dùng như "pair
+                    programmer" — accept suggestions có chọn lọc, không accept
+                    blind.<br />
+                    — <strong>Claude / ChatGPT</strong>: Explain unfamiliar
+                    codebase, debug reasoning, research approach cho problem
+                    mới, generate test cases.<br /><br />
+                    <strong>Workflow thực tế của tôi:</strong><br />
+                    — Stuck với bug: mô tả context cho AI, thường AI gợi ý
+                    direction đúng (tôi verify và apply)<br />
+                    — Viết tests: generate test skeleton, tôi fill edge cases<br />
+                    — Code review prep: ask AI review code trước khi submit →
+                    catch obvious issues<br />
+                    — Learning: hỏi AI explain concept, sau đó verify với docs
+                    chính thức<br /><br />
+                    <strong>Giới hạn mà tôi nhận ra:</strong><br />
+                    — AI không biết context của codebase cụ thể → output cần
+                    adapt<br />
+                    — AI confident ngay cả khi sai → phải verify<br />
+                    — Với security-sensitive code → double-check kỹ, không trust
+                    blindly
+                  </div>
+                </div>
+
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">3</div>
+                    <div class="q-text">
+                      Để không bị AI "thay thế", bạn đang làm gì để phát triển
+                      bản thân?
+                    </div>
+                    <span class="badge badge-hard q-diff">Growth mindset</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Đây là câu interviewer muốn nghe kế hoạch cụ thể, không
+                      phải câu sáo rỗng.</strong
+                    ><br /><br />
+                    <strong>Các hướng tôi đang focus:</strong><br /><br />
+                    <strong>1. Đi sâu vào "why" thay vì chỉ "how"</strong><br />
+                    AI biết cách dùng React. Nhưng hiểu <em>tại sao</em> Fiber
+                    được thiết kế vậy, <em>tại sao</em> Concurrent Mode cần
+                    thiết, <em>tại sao</em> closure gây memory leak — đó là thứ
+                    AI giải thích nhưng không thực sự "hiểu" để áp dụng trong
+                    context.<br /><br />
+                    <strong>2. System thinking & architecture</strong><br />
+                    AI giỏi viết component. Nhưng quyết định "nên dùng
+                    micro-frontend không?", "caching strategy phù hợp là gì?",
+                    "design system nên implement thế nào?" cần người có kinh
+                    nghiệm và business context.<br /><br />
+                    <strong>3. Communication & collaboration</strong><br />
+                    Soft skills: present technical decisions rõ ràng cho
+                    non-tech, negotiate scope, manage expectation. AI không
+                    replace điều này.<br /><br />
+                    <strong>4. Học cách dùng AI hiệu quả hơn người khác</strong
+                    ><br />
+                    Prompt engineering, biết AI limit, biết khi nào trust vs khi
+                    nào verify — đây là meta-skill quan trọng.<br /><br />
+                    <strong>5. Domain expertise</strong><br />
+                    AI generalist. Developer biết sâu về performance
+                    optimization, accessibility, security, specific domain
+                    (fintech, healthtech) có value không AI nào replace được
+                    ngay.
+                  </div>
+                </div>
+
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">4</div>
+                    <div class="q-text">
+                      Bạn lo lắng về AI không? Nó ảnh hưởng như thế nào đến
+                      career plan của bạn?
+                    </div>
+                    <span class="badge badge-med q-diff">Honest</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Trả lời honest — không giả vờ không lo, cũng không
+                      panic:</strong
+                    ><br /><br />
+                    <em
+                      >"Có, tôi có lo — nhưng theo hướng healthy anxiety chứ
+                      không phải fear. Nó khiến tôi chủ động hơn."</em
+                    ><br /><br />
+                    <strong>Những gì tôi thấy thực tế:</strong><br />
+                    — Junior dev viết boilerplate đơn thuần đang bị pressure
+                    nhiều hơn<br />
+                    — Developer biết dùng AI tools đang productive hơn hẳn và
+                    được trọng dụng<br />
+                    — Company đang cần ít developer hơn cho cùng output, nhưng
+                    cần developer <em>giỏi hơn</em><br /><br />
+                    <strong>Career plan của tôi đang điều chỉnh:</strong><br />
+                    — Invest nhiều hơn vào depth thay vì breadth — trở thành
+                    expert thực sự trong FE performance, architecture<br />
+                    — Build product sense — hiểu business, không chỉ code<br />
+                    — Develop leadership skills sớm — AI không manage người,
+                    không build team culture<br />
+                    — Stay current với AI tools — dùng chúng để multiply output,
+                    không để bị replace<br /><br />
+                    <em
+                      >"Tôi tin rằng developer biết học nhanh và biết
+                      collaborate với AI sẽ có nhiều cơ hội hơn, không ít hơn —
+                      vì bar của output được raise lên mà vẫn cần người định
+                      hướng."</em
+                    >
+                  </div>
+                </div>
+
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">5</div>
+                    <div class="q-text">
+                      Nếu AI có thể generate toàn bộ frontend từ design file,
+                      developer cần làm gì?
+                    </div>
+                    <span class="badge badge-hard q-diff">Future thinking</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Đây là câu hỏi giả định thú vị — show tư duy
+                      forward-looking:</strong
+                    ><br /><br />
+                    <strong
+                      >Ngay cả khi điều đó xảy ra, developer vẫn cần:</strong
+                    ><br /><br />
+                    <strong>Quality control & review</strong>: AI-generated code
+                    có performance issues, accessibility gaps, security holes.
+                    Cần người review với domain expertise.<br /><br />
+                    <strong>System integration</strong>: Frontend không tồn tại
+                    độc lập. Integration với API, auth, state management,
+                    analytics, monitoring — cần engineer hiểu toàn bộ hệ
+                    thống.<br /><br />
+                    <strong>Edge cases & business logic</strong>: "Nếu user đang
+                    ở Vietnam và payment failed vào 23:58, hiện gì?" — AI không
+                    biết business rules nếu không được specify đầy đủ.<br /><br />
+                    <strong>Performance optimization cho context cụ thể</strong
+                    >: Optimize cho 2G network ở rural Vietnam, hay optimize cho
+                    enterprise dashboard với 10,000 rows — cần human
+                    judgment.<br /><br />
+                    <strong>Ownership & accountability</strong>: Khi production
+                    incident xảy ra lúc 3am — cần người có context, có access,
+                    có authority để quyết định rollback hay hotfix.<br /><br />
+                    <em
+                      >"Role của developer sẽ shift từ 'viết code' sang 'define
+                      problems rõ ràng, review và curate AI output, make
+                      architectural decisions, own system reliability'."</em
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- vi -->
+          <div class="lang-pane en">
+            <span class="lang-flag flag-en">🇬🇧 English</span>
+            <div class="block def">
+              <div class="block-title">
+                💡 No single "correct" answer — interviewers evaluate your
+                reasoning
+              </div>
+              Avoid extremes ("AI will replace everyone" or "AI can't replace
+              anything"). Show nuanced analysis and that you're actively
+              adapting.
+            </div>
+            <div class="qs">
+              <div class="qs-head">
+                <span class="qs-head-label"
+                  >🎯 Questions on AI and the future of dev</span
+                >
+              </div>
+              <div class="qs-list">
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">1</div>
+                    <div class="q-text">
+                      Do you think AI will replace Frontend Developers? What's
+                      your view?
+                    </div>
+                    <span class="badge badge-hard q-diff">Open-ended</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >"AI is replacing parts of the work, not the whole
+                      developer."</strong
+                    ><br /><br />
+                    <strong>AI does well:</strong> Boilerplate, basic CRUD,
+                    syntax suggestions, format conversion, simple debugging,
+                    basic component generation.<br /><br />
+                    <strong>AI can't replace yet — where to invest:</strong
+                    ><br />
+                    — System design with real business constraints and tech debt
+                    context<br />
+                    — Complex debugging (race conditions, memory leaks,
+                    production incidents)<br />
+                    — Product sense — asking the right questions, not just
+                    implementing answers<br />
+                    — Cross-functional collaboration<br />
+                    — Critical review of AI output (AI hallucinates, writes
+                    subtle bugs)<br /><br />
+                    <em
+                      >"AI makes developers 10x more productive, it doesn't
+                      replace them. But developers who don't use AI will be
+                      replaced by developers who do."</em
+                    >
+                  </div>
+                </div>
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">2</div>
+                    <div class="q-text">
+                      What are you doing to stay relevant as AI advances?
+                    </div>
+                    <span class="badge badge-hard q-diff">Growth mindset</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    Specific focus areas:<br /><br />
+                    <strong>1. Depth over breadth</strong>: AI knows how to use
+                    React. Understanding <em>why</em> Fiber was designed that
+                    way, why Concurrent Mode is needed — that's what AI explains
+                    but doesn't truly apply in context.<br />
+                    <strong>2. System thinking</strong>: Architectural decisions
+                    requiring business context and tradeoff judgment.<br />
+                    <strong>3. Communication</strong>: Presenting technical
+                    decisions to non-tech, negotiating scope, managing
+                    expectations.<br />
+                    <strong>4. AI collaboration skills</strong>: Prompt
+                    engineering, knowing AI's limits, knowing when to trust vs
+                    verify.<br />
+                    <strong>5. Domain expertise</strong>: AI is generalist. Deep
+                    expertise in performance, accessibility, security, or
+                    specific domains (fintech, healthtech) has irreplaceable
+                    value.
+                  </div>
+                </div>
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">3</div>
+                    <div class="q-text">
+                      If AI can generate entire frontends from design files,
+                      what's left for developers?
+                    </div>
+                    <span class="badge badge-hard q-diff">Future thinking</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    Even then, developers would handle:
+                    <strong>quality control</strong> (performance issues, a11y
+                    gaps, security holes in generated code),
+                    <strong>system integration</strong> (API, auth, state,
+                    monitoring — full-system understanding),
+                    <strong>business logic edge cases</strong> (AI can't know
+                    your business rules without perfect specification),
+                    <strong>context-specific optimization</strong>, and
+                    <strong>ownership/accountability</strong> (production
+                    incident at 3am needs a human with authority and
+                    context).<br /><br />
+                    <em
+                      >"The role shifts from 'write code' to 'define problems
+                      clearly, review and curate AI output, make architectural
+                      decisions, own system reliability'."</em
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /ai-replace card -->
+
+      <!-- Card 2: AI tools thực tế -->
+      <div class="card" id="c-ai-tools">
+        <div class="card-head" onclick="toggle('c-ai-tools')">
+          <div
+            class="card-icon"
+            style="background: var(--green-bg); color: var(--green)">
+            🛠️
+          </div>
+          <div class="card-info">
+            <div class="card-name">
+              AI tools thực tế cho FE Developer — workflow tối ưu
+            </div>
+            <div class="card-badges">
+              <span class="badge badge-med">Thực chiến</span>
+              <span class="badge badge-q">2 câu phỏng vấn</span>
+            </div>
+          </div>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="card-body">
+          <div class="lang-tabs">
+            <button class="ltab active" onclick="ltab(this, 'vi')">
+              🇻🇳 Tiếng Việt
+            </button>
+            <button class="ltab" onclick="ltab(this, 'en')">🇬🇧 English</button>
+          </div>
+          <div class="lang-pane active vi">
+            <span class="lang-flag flag-vi">🇻🇳 Tiếng Việt</span>
+            <div class="block def">
+              <div class="block-title">
+                🔧 Ecosystem AI tools cho FE dev hiện tại (2025)
+              </div>
+              <strong>IDE & Coding:</strong><br />
+              — <strong>Cursor</strong>: VS Code fork với AI built-in sâu nhất.
+              Chat với codebase, multi-file edit, agent mode<br />
+              — <strong>GitHub Copilot</strong>: Tích hợp tốt nhất vào VS Code,
+              inline suggestion nhanh<br />
+              — <strong>Windsurf</strong> (Codeium): Alternative mới nổi, free
+              tier mạnh<br /><br />
+              <strong>Chat & Research:</strong><br />
+              — <strong>Claude</strong> (Anthropic): Tốt nhất cho code review,
+              architecture discussion, long context<br />
+              — <strong>ChatGPT</strong>: Debugging, explain concepts, generate
+              tests<br />
+              — <strong>Perplexity</strong>: Research technical topics với
+              sources<br /><br />
+              <strong>Design to Code:</strong><br />
+              — <strong>v0 by Vercel</strong>: Generate React components từ
+              text/design<br />
+              — <strong>Figma AI</strong>: Đang phát triển mạnh
+            </div>
+            <div class="tip">
+              <div class="block-title">
+                💡 Workflow AI-assisted thực tế hiệu quả
+              </div>
+              <strong>Khi bắt đầu feature mới:</strong><br />
+              1. Mô tả requirement cho AI → brainstorm approach và trade-offs<br />
+              2. Quyết định approach dựa trên context AI không biết (codebase,
+              team, deadline)<br />
+              3. Dùng AI generate scaffold/boilerplate → review và adapt<br /><br />
+              <strong>Khi debug:</strong><br />
+              1. Describe symptom + context rõ ràng → AI thường suggest đúng
+              hướng<br />
+              2. Verify suggestion trước khi apply — đừng copy-paste blind<br /><br />
+              <strong>Khi học:</strong><br />
+              1. Ask AI explain concept → hiểu overview<br />
+              2. Verify với official docs — AI có thể outdated hoặc sai<br />
+              3. Build small example để confirm hiểu đúng
+            </div>
+            <div class="qs">
+              <div class="qs-head">
+                <span class="qs-head-label">🎯 Câu hỏi phỏng vấn</span>
+              </div>
+              <div class="qs-list">
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">1</div>
+                    <div class="q-text">
+                      Rủi ro của việc dùng AI để viết code là gì? Bạn mitigate
+                      thế nào?
+                    </div>
+                    <span class="badge badge-hard q-diff"
+                      >Critical thinking</span
+                    >
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong>Rủi ro thực sự (không phải lý thuyết):</strong
+                    ><br /><br />
+                    <strong>1. Hallucination — AI tự tin khi sai</strong><br />
+                    AI suggest API không tồn tại, outdated syntax, deprecated
+                    pattern. Nếu copy-paste không hiểu → bug khó debug.<br />
+                    Mitigate: Luôn verify với official docs. Không dùng code
+                    mình không hiểu.<br /><br />
+                    <strong>2. Security vulnerabilities</strong><br />
+                    AI generated code có thể có XSS, SQL injection, exposed
+                    secrets, insecure direct object reference. AI không biết
+                    security context của app bạn.<br />
+                    Mitigate: Security review kỹ AI-generated code, đặc biệt
+                    auth, input handling, API calls.<br /><br />
+                    <strong>3. Over-engineering hoặc wrong pattern</strong
+                    ><br />
+                    AI suggest pattern phù hợp với context khác, không phải
+                    codebase của bạn.<br />
+                    Mitigate: Review xem có fit với existing architecture
+                    không.<br /><br />
+                    <strong>4. Skill atrophy</strong><br />
+                    Nếu dùng AI cho mọi thứ mà không hiểu output → skill không
+                    develop, phụ thuộc hoàn toàn.<br />
+                    Mitigate: Với concept mới, tự làm trước, dùng AI để
+                    verify/improve, không để AI làm thay.
+                  </div>
+                </div>
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">2</div>
+                    <div class="q-text">
+                      Company của chúng tôi restrict dùng AI tools vì security —
+                      bạn nghĩ sao?
+                    </div>
+                    <span class="badge badge-med q-diff">Situational</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    <strong
+                      >Đây là câu test xem bạn respect policy hay không, và có
+                      hiểu lý do không.</strong
+                    ><br /><br />
+                    <em
+                      >"Tôi hiểu và respect điều đó. Có nhiều lý do chính đáng:
+                      sensitive codebase không muốn leak qua AI training data,
+                      compliance requirements (HIPAA, GDPR, fintech
+                      regulations), IP protection."</em
+                    ><br /><br />
+                    <strong
+                      >Nếu được hỏi thêm "bạn có thể work hiệu quả
+                      không?":</strong
+                    ><br />
+                    "Tôi đã code trước khi có AI tools và vẫn làm được. AI tools
+                    giúp productive hơn nhưng không phải dependency. Tôi sẽ
+                    invest nhiều hơn vào documentation, testing, và deep
+                    understanding của codebase để compensate."<br /><br />
+                    <strong>Có thể suggest middle ground:</strong><br />
+                    "Một số companies dùng private AI deployments (self-hosted
+                    models, GitHub Copilot Business với no-training option) — có
+                    thể là option cân nhắc."
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- vi -->
+          <div class="lang-pane en">
+            <span class="lang-flag flag-en">🇬🇧 English</span>
+            <div class="block def">
+              <div class="block-title">
+                🔧 Current AI ecosystem for FE devs (2025)
+              </div>
+              <strong>IDE & Coding:</strong> Cursor (deepest AI integration),
+              GitHub Copilot (best VS Code integration), Windsurf (strong free
+              tier).<br />
+              <strong>Chat & Research:</strong> Claude (code review,
+              architecture, long context), ChatGPT (debugging, concepts),
+              Perplexity (research with sources).<br />
+              <strong>Design to Code:</strong> v0 by Vercel, Figma AI.
+            </div>
+            <div class="qs">
+              <div class="qs-head">
+                <span class="qs-head-label">🎯 Interview Questions</span>
+              </div>
+              <div class="qs-list">
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">1</div>
+                    <div class="q-text">
+                      What are the risks of using AI to write code? How do you
+                      mitigate them?
+                    </div>
+                    <span class="badge badge-hard q-diff"
+                      >Critical thinking</span
+                    >
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    Real risks:<br />
+                    <strong>1. Hallucination</strong>: AI confidently suggests
+                    non-existent APIs, outdated syntax. Mitigation: always
+                    verify against official docs, never use code you don't
+                    understand.<br />
+                    <strong>2. Security vulnerabilities</strong>: XSS,
+                    injection, exposed secrets — AI doesn't know your security
+                    context. Mitigation: security review all AI-generated
+                    auth/input/API code.<br />
+                    <strong>3. Wrong pattern for your context</strong>: AI
+                    suggests patterns that don't fit your architecture.
+                    Mitigation: evaluate fit with existing codebase.<br />
+                    <strong>4. Skill atrophy</strong>: Using AI for everything
+                    without understanding output. Mitigation: for new concepts,
+                    try yourself first, use AI to verify/improve.
+                  </div>
+                </div>
+                <div class="q-item" onclick="toggleQ(this)">
+                  <div class="q-row">
+                    <div class="q-num">2</div>
+                    <div class="q-text">
+                      Our company restricts AI tools for security reasons. How
+                      do you feel about that?
+                    </div>
+                    <span class="badge badge-med q-diff">Situational</span>
+                    <span class="q-chevron">▼</span>
+                  </div>
+                  <div class="q-answer">
+                    "I understand and respect that. Valid reasons include:
+                    preventing sensitive code from leaking via AI training,
+                    compliance requirements (HIPAA, GDPR, fintech), IP
+                    protection."<br /><br />
+                    "I coded before AI tools existed and can work effectively
+                    without them. AI improves productivity but it's not a
+                    dependency. I'd invest more in documentation, testing, and
+                    deep codebase understanding."<br /><br />
+                    "One possible middle ground worth exploring: private AI
+                    deployments like self-hosted models or GitHub Copilot
+                    Business with the no-training option."
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /ai-tools card -->
+    </div>
+    <!-- /sec-ai -->
 
     <script>
       // Section switching
